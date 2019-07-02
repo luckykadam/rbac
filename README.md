@@ -27,7 +27,7 @@ There are three modules:
 ### Data
 Data is represented as Entities and relationships.
 
-![Alt text](modules.png)
+![Alt text](re-diagram.png)
 
 #### Entities
 1. User: All the information about the user.
