@@ -16,13 +16,18 @@ Basic role based access control (authorization) system.
 Design is kept simple, modular and extensible.
 
 ### Modules
+
+![Alt text](modules.png)
+
 There are three modules:
 1. Command line interface: The module responsible for interaction with the end-user. Currently it is basic command line interface, but later it can be changed/replaced without affecting other modules. For example: it can be replaced by REST API.
 2. Authorization System: This module contains the logic to determine if the user is authorized for certain action on the resource.
 3. Data Access Object: This module is responsible for interacting with the storage and provide the data to the application. Currently it reads from csv file, and keeps the data in memory. It can easily be replaced with another DAO which interacts with Database.
 
 ### Data
-Data is represented as Entities and relationships:
+Data is represented as Entities and relationships.
+
+![Alt text](modules.png)
 
 #### Entities
 1. User: All the information about the user.
