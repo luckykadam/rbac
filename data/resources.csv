@@ -1,0 +1,7 @@
+id,name
+1,staging_db
+2,prod_db
+3,aws_ecs
+4,staging_container
+5,prod_container
+6,firebase
