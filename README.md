@@ -39,27 +39,28 @@ Data is represented as Entities and relationships.
 2. Role Resource Relation: The Many-to-Many relationship between roles and resources.
 
 ### Implementation
-Implementation is done in python3.6. No external library is used. Source code can be found in directory role_based_resource_access. 
-Files
+Implementation is done in python3.6. No external library is used.
 
-#### user_iterface.py
+####Files
+
+##### user_iterface.py
 This file represents Command line interface module. It interacts directly with authorization module, but not with data access module.
 The function start contains the loop to receive and execute the command.
 
-#### authorization.py
+##### authorization.py
 This file represents Authorization system module. It interacts directly with data access module.
 It provides functions: is_authorized, add_role_to_user and remove_user_from_role.
 
-#### data_access_object.py
+##### data_access_object.py
 This file represents Data Access Object module. It interacts with storage(csv files) to provide data access to other modules.
 
-#### models.py
+##### models.py
 This file contains the definition of entities and relationships.
 
-#### main.py
+##### main.py
 This file stitch together all the module into an application.
 
-#### exceptions.py
+##### exceptions.py
 This file contains definition of commonly occurring exceptions.
 
 ## Usage/Execution
